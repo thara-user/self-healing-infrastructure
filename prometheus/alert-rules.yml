@@ -1,0 +1,11 @@
+﻿groups:
+  - name: self-healing-alerts
+    rules:
+      - alert: NginxDown
+        expr: nginx_up == 0
+        for: 15s
+        labels:
+          severity: critical
+        annotations:
+          summary: "NGINX is down"
+          description: "The NGINX service is unavailable or cannot be scraped by the exporter."

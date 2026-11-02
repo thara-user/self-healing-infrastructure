@@ -1,0 +1,15 @@
+# Runtime logs
+*.log
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
